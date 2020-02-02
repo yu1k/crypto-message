@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="js">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>メッセージを暗号化します</title>
+    <title>メッセージを暗号化git します</title>
 </head>
 <body>
-    <h1>入力したメッセージを,一文字ずらします.</h1>
+    <h1>入力したメッセージを,一文字ずらして暗号文にします.</h1>
     <h2>入力できる文字数は1文字です.</h2>
-    
+    <form id="form" action="#">
+        <input type="text" id="input_message" size="40" maxlength="1" value="">
+        <input type="button" onclick="main()" value="結果を出力する">
+    </form>
+    <div id="output_message"></div>
+    <script src="script.js"></script>
 </body>
 </html>
